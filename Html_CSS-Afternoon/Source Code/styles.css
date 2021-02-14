@@ -1,0 +1,253 @@
+/* COMMON */
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2 {
+  font-family: "Hind", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+h2 {
+  font-size: 2.7em;
+  margin-bottom: 20px;
+  color: #131313;
+}
+h4 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #131313;
+}
+p {
+  color: #181a1b;
+  font-size: 16px;
+}
+label {
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  color: #999999;
+}
+input {
+  width: 100%;
+  padding: 0.5em 0.5em;
+  font-size: 1.2em;
+  border-radius: 3px;
+  border: 1px solid #d9d9d9;
+}
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 0.5em 0.5em;
+  font-size: 1.2em;
+  border-radius: 3px;
+  border: 1px solid #d9d9d9;
+}
+button {
+  display: inline-block;
+  border-radius: 3px;
+  border: none;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.8em;
+  background: #69c773;
+  border-bottom: 1px solid #498b50;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+button:hover,
+button:focus {
+  opacity: 0.75;
+  cursor: pointer;
+}
+button:active {
+  opacity: 1;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1) inset;
+}
+/* SELF MADE */
+#pre_loader {
+  height: 200px;
+  width: 400px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -200px;
+}
+.intro {
+  padding: 10%;
+}
+#navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: grey;
+  z-index: 1;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+  transform: translate3d(0px, -10px, 1px);
+  border-radius: 12px;
+}
+.my_img {
+  border-radius: 50%;
+  height: 25%;
+  width: 25%;
+}
+.my_img:hover {
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+  transform: translate3d(0px, -5px, 1px);
+}
+.fa {
+  color: black;
+  font-size: 1.3em;
+  padding-left: 50px;
+}
+.my_li li {
+  font-size: 20px;
+}
+.fa1 {
+  padding-left: 50px;
+}
+.social-icons li:hover i {
+  color: #48b14d;
+  transform: scale(1.5);
+  margin-left: 15px;
+}
+.short_intro {
+  display: flex;
+  justify-content: space-between;
+}
+.social-icons {
+  display: flex;
+  padding: 10px;
+}
+#skills {
+  padding: 95px 0 50px;
+  background: #f2f2f2;
+}
+#skills h2 {
+  margin-bottom: 50px;
+}
+.skills-right {
+  float: right;
+  margin-left: 10%;
+}
+.progress-box {
+  margin-bottom: 50px;
+}
+.progress-box p {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.progress {
+  background-color: rgba(26, 26, 26, 0.31);
+  height: 20px;
+  border-radius: 4px;
+  overflow: hidden;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.progress-box .progress {
+  box-shadow: none;
+  height: 3px;
+}
+.progress-box .progress-bar {
+  transition-duration: 2000ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+.bg-color-base {
+  background: #48b14d;
+}
+.color-heading {
+  color: #131313 !important;
+}
+.card {
+  padding: 10px;
+}
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+  transform: translate3d(0px, -10px, 1px);
+}
+#portfolio {
+  padding: 90px 0 80px;
+  background: #fff;
+}
+.group {
+  padding: 10px;
+}
+#services {
+  padding: 95px 0 65px;
+  background: #f2f2f2;
+}
+#services h2 {
+  margin-bottom: 30px;
+}
+.services-item {
+  padding: 30px 50px 30px 0;
+}
+.services-item i {
+  margin-bottom: 20px;
+}
+#hire {
+  padding: 95px 0 90px;
+  background: #fff;
+}
+#hire p {
+  width: 30em;
+  max-width: 100%;
+}
+#hire .btn {
+  margin-top: 60px;
+  float: right;
+}
+.smoth-scroll:hover {
+  background: #48b14d !important;
+  visibility: visible;
+  color: #fff;
+}
+.success {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #468847;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.error {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #b94a48;
+  background-color: #f2dede;
+  border: 1px solid rgba(185, 74, 72, 0.3);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+#contact {
+  padding: 95px 0 95px;
+  background: #f2f2f2;
+}
