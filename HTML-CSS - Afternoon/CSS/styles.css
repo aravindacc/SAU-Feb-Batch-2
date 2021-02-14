@@ -1,0 +1,155 @@
+body {
+    background-color:   #ecf4f3;
+    margin: 0px;
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.top-container {
+    background-color: #e8ffff ;
+    position: relative;
+    padding: 100px;
+    
+}
+
+.main-picture {
+    margin-top: 50px;
+    height: 200px;
+}
+
+h1 {
+    
+    margin: 50px auto 0 auto;
+    font-family: 'Sacramento', cursive;
+    font-size: 562.5%;
+    color: #66bfbf
+
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5rem;
+    color: #66bfbf;
+    font-weight: normal; 
+}
+h3,h4 {
+    color: #11999e
+}
+
+hr {
+    border-width: 6px;
+    border-style: none;
+    border-top-style: dotted;
+    width:6%;
+    border-color: #d9e4dd;
+    margin-bottom: 50px;
+}
+
+.spanstyle {
+    text-decoration: underline;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 170px;
+    bottom: 370px;
+}
+.top-cloud {
+    position: absolute;
+    top: 50px;
+    right:300px;
+}
+
+.profile-pic {
+    border-radius: 100%;
+    height:200px;
+    width:200px;
+    margin-top: 50px;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 70px auto 70px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.skill-img1 {
+    margin-right: 30px;
+    float: left;
+    width: 25%;
+}
+
+.skill-img2 {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+
+.description {
+    width : 50%;
+    margin:25px auto;
+    padding-bottom:25px;
+}
+
+.btn {
+    background: #3D74F6;
+    background-image: -webkit-linear-gradient(top, #3D74F6, #1ED0BF);
+    background-image: -moz-linear-gradient(top, #3D74F6, #1ED0BF);
+    background-image: -ms-linear-gradient(top, #3D74F6, #1ED0BF);
+    background-image: -o-linear-gradient(top, #3D74F6, #1ED0BF);
+    background-image: -webkit-gradient(to bottom, #3D74F6, #1ED0BF);
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+    color: #FFFFFF;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 9px;
+    margin: 25px auto 40px auto;
+    
+    text-shadow: 10px 2px 24px #000000;
+    border: solid #337FED 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+ }
+ 
+ .btn:hover {
+    border: solid #0D2FE7 1px;
+    background: #85EBD3;
+    background-image: -webkit-linear-gradient(top, #85EBD3, #1C9970);
+    background-image: -moz-linear-gradient(top, #85EBD3, #1C9970);
+    background-image: -ms-linear-gradient(top, #85EBD3, #1C9970);
+    background-image: -o-linear-gradient(top, #85EBD3, #1C9970);
+    background-image: -webkit-gradient(to bottom, #85EBD3, #1C9970);
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+    text-decoration: none;
+ }
+
+
+ .bottom-container {
+     background-color: #66bfbf;
+     padding: 25px 0;
+     font-family: sans-serif;
+     text-decoration: none;
+     font-size: 14px;
+     color:white
+ }
+
+
+ .footer-link {
+     margin: 0 10px;
+     text-decoration: none;
+     color: #11999e;
+     font-size: 16px;
+ }
+
+ .footer-link:hover {
+     color: white;
+ }
