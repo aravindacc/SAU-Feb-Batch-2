@@ -1,0 +1,98 @@
+<div class="rightContainer card">
+  <h2 style="text-align: center">{{ title }}</h2>
+  <br />
+  <hr />
+  <div>
+    <form style="margin-left: 2%; margin-right: 2%">
+      <div class="my_table box">
+        <table class="table">
+          <thead>
+            <tr style="cursor: pointer">
+              <th scope="col">
+                <div [ngSwitch]="sort.one" (click)="sortBy('rollNo')">
+                  Roll No.
+                  <span *ngSwitchCase="'asc'" class="sort">&nbsp;&#8593;</span>
+                  <span *ngSwitchCase="'dsc'" class="sort">&nbsp;&#8595;</span>
+                </div>
+              </th>
+              <th scope="col">
+                <div [ngSwitch]="sort.two" (click)="sortBy('f_name')">
+                  First Name
+                  <span *ngSwitchCase="'asc'" class="sort">&nbsp;&#8593;</span>
+                  <span *ngSwitchCase="'dsc'" class="sort">&nbsp;&#8595;</span>
+                </div>
+              </th>
+              <th scope="col">
+                <div [ngSwitch]="sort.three" (click)="sortBy('l_name')">
+                  Last Name
+                  <span *ngSwitchCase="'asc'" class="sort">&nbsp;&#8593;</span>
+                  <span *ngSwitchCase="'dsc'" class="sort">&nbsp;&#8595;</span>
+                </div>
+              </th>
+              <th scope="col">
+                <div [ngSwitch]="sort.four" (click)="sortBy('phone')">
+                  Phone
+                  <span *ngSwitchCase="'asc'" class="sort">&nbsp;&#8593;</span>
+                  <span *ngSwitchCase="'dsc'" class="sort">&nbsp;&#8595;</span>
+                </div>
+              </th>
+              <th scope="col">
+                <div [ngSwitch]="sort.five" (click)="sortBy('dob')">
+                  DOB
+                  <span *ngSwitchCase="'asc'" class="sort">&nbsp;&#8593;</span>
+                  <span *ngSwitchCase="'dsc'" class="sort">&nbsp;&#8595;</span>
+                </div>
+              </th>
+              <th scope="col">
+                <div [ngSwitch]="sort.six" (click)="sortBy('city')">
+                  City
+                  <span *ngSwitchCase="'asc'" class="sort">&nbsp;&#8593;</span>
+                  <span *ngSwitchCase="'dsc'" class="sort">&nbsp;&#8595;</span>
+                </div>
+              </th>
+              <th scope="col">
+                <div [ngSwitch]="sort.seven" (click)="sortBy('pincode')">
+                  Pincode
+                  <span *ngSwitchCase="'asc'" class="sort">&nbsp;&#8593;</span>
+                  <span *ngSwitchCase="'dsc'" class="sort">&nbsp;&#8595;</span>
+                </div>
+              </th>
+              <th scope="col">Remove</th>
+            </tr>
+          </thead>
+          <tbody id="data_table" *ngFor="let data of studentList">
+            <tr>
+              <td>171B{{ data.rollNo }}</td>
+              <td>{{ data.f_name }}</td>
+              <td>{{ data.l_name }}</td>
+              <td>{{ data.phone }}</td>
+              <td>{{ data.dob | MyDate: "MM_A DD, YYYY" }}</td>
+              <td>{{ data.city }}</td>
+              <td>{{ data.pincode }}</td>
+              <td (click)="deleteStudent(data)">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  fill="red"
+                  class="bi bi-trash"
+                  viewBox="0 0 16 16"
+                  style="cursor: pointer"
+                >
+                  <path
+                    d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"
+                  />
+                </svg>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+      </div>
+    </form>
+  </div>
+</div>

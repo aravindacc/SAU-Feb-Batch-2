@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <app-user-form (createEntry)="createStudent($event)"></app-user-form>
+    <app-user-table
+      [studentList]="studentList"
+      (sortTable)="sortBy($event)"
+      (deleteUser)="deleteStudent($event)"
+    ></app-user-table>
+  </body>
+</html>

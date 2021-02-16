@@ -1,0 +1,32 @@
+.my_table {
+  max-height: 690px;
+  overflow: auto;
+  margin-bottom: 2%;
+}
+
+.rightContainer {
+  float: right;
+  padding-top: 2%;
+  margin-left: 1%;
+  margin-right: 3%;
+  padding-bottom: 2%;
+  width: 49%;
+  height: 60%;
+  margin-top: 2%;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+  transform: translate3d(0px, -10px, -5px);
+}
+
+.background {
+  background-color: rgb(230, 230, 230);
+}
+
+.show {
+  display: block;
+}
+
+.sort {
+  font-size: 20px;
+  font-weight: bold;
+}

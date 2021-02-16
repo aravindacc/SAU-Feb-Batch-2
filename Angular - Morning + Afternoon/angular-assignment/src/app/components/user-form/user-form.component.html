@@ -1,0 +1,193 @@
+<div class="myCardClass card">
+  <h2 style="text-align: center">{{ title }}</h2>
+  <hr style="margin-left: 5%" />
+  <br />
+  <form
+    style="margin-left: 5%"
+    [formGroup]="studentForm"
+    (submit)="createStudent()"
+  >
+    <div class="form-row">
+      <div class="col-md-5 mb-3">
+        <label for="f_name"><b>First name</b></label>
+        <input
+          type="text"
+          class="form-control"
+          id="f_name"
+          placeholder="First name"
+          formControlName="f_name"
+        />
+        <div
+          *ngIf="
+            (!studentForm.get('f_name').valid &&
+              studentForm.get('f_name').touched) ||
+            (submitted && !studentForm.get('f_name').valid)
+          "
+          class="invalid-feedback"
+          style="display: block"
+        >
+          Please provide a First Name
+        </div>
+      </div>
+      &nbsp;&nbsp;
+      <div class="col-md-5 mb-3">
+        <label for="l_name"><b>Last name</b></label>
+        <input
+          type="text"
+          class="form-control"
+          id="l_name"
+          placeholder="Last name"
+          formControlName="l_name"
+        />
+        <div
+          *ngIf="
+            (!studentForm.get('l_name').valid &&
+              studentForm.get('l_name').touched) ||
+            (submitted && !studentForm.get('l_name').valid)
+          "
+          class="invalid-feedback"
+          style="display: block"
+        >
+          Please provide a Last Name
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <div class="form-row">
+      <div class="col-md-3 mb-3">
+        <label for="phone"><b>Phone Number</b></label>
+        <input
+          type="text"
+          class="form-control"
+          id="phone"
+          placeholder="Phone Number"
+          formControlName="phone"
+        />
+        <div
+          *ngIf="
+            (!studentForm.get('phone').valid &&
+              studentForm.get('phone').touched) ||
+            (submitted && !studentForm.get('phone').valid)
+          "
+          class="invalid-feedback"
+          style="display: block"
+        >
+          Please provide a valid Phone Number.
+        </div>
+      </div>
+      &nbsp;&nbsp;
+      <div class="col-md-6 mb-3">
+        <label for="rollNo"><b>Your Roll No.</b></label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroupPrepend"
+              >171B&nbsp;</span
+            >
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            id="rollNo"
+            value="{{ rollNo }}"
+            placeholder="Roll No."
+            aria-describedby="inputGroupPrepend"
+            disabled
+          />
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="form-row">
+      <div class="col-md-3 mb-3">
+        <label for="city"><b>City</b></label>
+        <input
+          type="text"
+          class="form-control"
+          id="city"
+          placeholder="City"
+          formControlName="city"
+        />
+        <div
+          *ngIf="
+            (!studentForm.get('city').valid &&
+              studentForm.get('city').touched) ||
+            (submitted && !studentForm.get('city').valid)
+          "
+          class="invalid-feedback"
+          style="display: block"
+        >
+          Please provide a City.
+        </div>
+      </div>
+      &nbsp;&nbsp;
+      <div class="col-md-4 mb-3">
+        <label for="pincode"><b>PinCode</b></label>
+        <input
+          type="number"
+          class="form-control"
+          id="pincode"
+          placeholder="PinCode"
+          formControlName="pincode"
+        />
+        <div
+          *ngIf="
+            (!studentForm.get('pincode').valid &&
+              studentForm.get('pincode').touched) ||
+            (submitted && !studentForm.get('pincode').valid)
+          "
+          class="invalid-feedback"
+          style="display: block"
+        >
+          Please Enter a Valid Pincode
+        </div>
+      </div>
+      &nbsp;&nbsp;
+      <div class="col-md-4 mb-3">
+        <label for="dob"><b>Date Of Birth</b></label>
+        <input
+          type="date"
+          class="form-control"
+          id="dob"
+          placeholder="Date Of Birth"
+          formControlName="dob"
+        />
+        <div
+          *ngIf="
+            (!studentForm.get('dob').valid && studentForm.get('dob').touched) ||
+            (submitted && !studentForm.get('dob').valid)
+          "
+          class="invalid-feedback"
+          style="display: block"
+        >
+          Please Select a DOB
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <div class="form-check mb-2 mr-sm-2">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="c_me"
+        formControlName="check"
+      />
+      <label class="form-check-label" for="c_me"> Check Me </label>
+      <div
+        *ngIf="
+          (!studentForm.get('check').valid &&
+            studentForm.get('check').touched) ||
+          (submitted && !studentForm.get('check').valid)
+        "
+        class="invalid-feedback"
+        style="display: block"
+      >
+        Please Check Me
+      </div>
+    </div>
+    <button class="btn btn-primary automate" type="submit">
+      <b>SAVE STUDENT DETAILS</b>
+    </button>
+  </form>
+</div>
