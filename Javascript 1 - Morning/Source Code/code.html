@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Including External Script -->
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+            crossorigin="anonymous"
+            />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="assets/styles.css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <title>Javascript 1 - Morning Assignment</title>
+    </head>
+    <body class="background">
+        <div class="myCardClass card">
+            <h2 style="text-align: center">Javascript 1 - Morning Assignment</h2>
+            <br />
+            <div c>
+                <form>
+                    <div class="Container box">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <p><b>Input A String Below</b></p>
+                                <input
+                                    id="inp1"
+                                    class="form-control"
+                                    type="text"
+                                    placeholder="String"
+                                    required
+                                    />
+                                <br />
+                                <div>
+                                    <button
+                                        type="button"
+                                        class="btn btn-primary"
+                                        onclick="totalLength(true)"
+                                        >
+                                    Find Length
+                                    </button>
+                                    &nbsp;&nbsp;
+                                    <button
+                                        type="button"
+                                        class="btn btn-primary"
+                                        onclick="upperAndLowerCase(true)"
+                                        >
+                                    Upper and LowerCase
+                                    </button>
+                                    &nbsp;&nbsp;
+                                    <button
+                                        type="button"
+                                        class="btn btn-primary"
+                                        onclick="seperateVowels(true)"
+                                        >
+                                    Seperate Vowels And Consonants
+                                    </button>
+                                </div>
+                                <br />
+                                <button
+                                    type="button"
+                                    class="btn btn-primary automate"
+                                    onclick="automate(true)"
+                                    >
+                                <b>AUTOMATE ALL TASKS</b>
+                                </button>
+                                <br />
+                                <!-- <br /><br /><input
+                                    id="result"
+                                    class="form-control"
+                                    type="text"
+                                    placeholder="Result"
+                                    disabled
+                                    /> -->
+                            </li>
+                            <br />
+                            <br />
+                            <li class="list-group-item">
+                                <p>
+                                <h5><b>Results</b></h5>
+                                </p>
+                                <div id="myTerminal" style="height: 400px; background-color: black;">
+                                    <!-- <p class="terminalOutput">></p> -->
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+
+    <!-- Including External Script -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"
+        ></script>
+    <script src="assets/script.js"></script>
+</html>

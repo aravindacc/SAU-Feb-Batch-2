@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+            />
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+            />
+        <link href="assets/styles.css" rel="stylesheet" />
+        <title>Javascript 2 - Afternoon Assignment</title>
+    </head>
+    <body onload="getRollNo()">
+        <div class="myCardClass card">
+            <h2 style="text-align: center">Javascript 2 - Afternoon Assignment</h2>
+            <hr style="margin-left: 5%;">
+            <br />
+            <form style="margin-left: 5%;" class="needs-validation" novalidate>
+                <div class="form-row">
+                    <div class="col-md-5 mb-3">
+                        <label for="f_name"><b>First name</b></label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="f_name"
+                            placeholder="First name"
+                            required
+                            />
+                        <div class="invalid-feedback">Please provide a First Name</div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <div class="col-md-5 mb-3">
+                        <label for="l_name"><b>Last name</b></label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="l_name"
+                            placeholder="Last name"
+                            required
+                            />
+                        <div class="invalid-feedback">Please provide a Last Name</div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="email"><b>Email</b></label>
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            placeholder="Email Address"
+                            required
+                            />
+                        <div class="invalid-feedback">Please provide a valid Email Address</div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-3 mb-3">
+                        <label for="age"><b>Age</b></label>
+                        <input
+                            type="number"
+                            class="form-control"
+                            id="age"
+                            placeholder="Age"
+                            min="1"
+                            required
+                            />
+                        <div class="invalid-feedback">Please provide a valid Age.</div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <div class="col-md-4 mb-3">
+                        <label for="gender"><b>Gender</b></label>
+                        <select class="form-control" id="gender">
+                            <option value="">----</option>
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                            <option value="O">Other</option>
+                        </select>
+                        <div class="invalid-feedback">Please Select a Gender</div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <div class="col-md-4 mb-3">
+                        <label for="dob"><b>Date Of Birth</b></label>
+                        <input
+                            type="date"
+                            class="form-control"
+                            id="dob"
+                            placeholder="Age"
+                            min="1"
+                            required
+                            />
+                        <div class="invalid-feedback">Please Select a DOB</div>
+                    </div>
+                </div>
+                <br>
+                <div class="form-check mb-2 mr-sm-2">
+                    <input class="form-check-input" type="checkbox" id="c_me">
+                    <label class="form-check-label" for="c_me">
+                    Check Me
+                    </label>
+                    <div class="invalid-feedback">Please Check Me</div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3" style="margin-left: 20%;">
+                        <label for="rollNo" style="margin-left: 30%;"><b>Your Roll No.</b></label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupPrepend">171B&nbsp;</span>
+                            </div>
+                            <input
+                                type="number"
+                                class="form-control"
+                                id="rollNo"
+                                placeholder="Roll No."
+                                aria-describedby="inputGroupPrepend"
+                                disabled
+                                />
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <button class="btn btn-primary automate" type="button" onclick="createStudent()"><b>SAVE STUDENT DETAILS</b></button>
+            </form>
+        </div>
+        <div class="rightContainer card">
+            <h2 style="text-align: center">Student Data</h2>
+            <br />
+            <div >
+                <form  style="margin-left: 2%; margin-right: 2%;">
+                    <div class="Container box">
+                        <ul class="list-group">
+                            <li class="my_table list-group-item">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Roll No.</th>
+                                            <th scope="col">First Name</th>
+                                            <th scope="col">Last Name</th>
+                                            <th scope="col">Age</th>
+                                            <th scope="col">Gender</th>
+                                            <th scope="col">Dob</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="data_table">
+                                    </tbody>
+                                </table>
+                            </li>
+                            <br />
+                            <br />
+                            <li class="list-group-item">
+                                <p>
+                                <h5><b>Get Student</b></h5>
+                                </p>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">171B&nbsp;</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="findRollNo" placeholder="Roll No" aria-label="Roll No" aria-describedby="basic-addon1">
+                                </div>
+                                <button
+                                    type="button"
+                                    class="btn btn-primary"
+                                    onclick="searchStudent()"
+                                    style="margin-left: 35%;"
+                                    >
+                                <b>Get Student Details</b>
+                                </button>
+                                <br />
+                                <div id="myTerminal" style="height: 400px; background-color: black;">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+            ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+            ></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+            ></script>
+        <script src="assets/script.js"></script>
+    </body>
+</html>

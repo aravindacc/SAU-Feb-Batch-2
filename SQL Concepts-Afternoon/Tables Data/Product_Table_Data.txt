@@ -1,0 +1,10 @@
+|p_code|p_name   |unit_price|category_assigned|
+|------|---------|----------|-----------------|
+|1     |Heater   |900.0     |1                |
+|2     |Table    |20900.45  |1                |
+|3     |Laptop   |300.56    |2                |
+|4     |Mouse    |890.0     |2                |
+|5     |Utencils |1200.0    |3                |
+|6     |Gas Stove|2200.45   |3                |
+|7     |Bat      |3300.56   |4                |
+|8     |Football |8490.0    |4                |

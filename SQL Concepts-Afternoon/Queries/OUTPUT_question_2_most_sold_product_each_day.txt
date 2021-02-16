@@ -1,0 +1,4 @@
+|p_code|p_name|date_of_purchase|total_units_sold|total_times_sold|category_assigned|
+|------|------|----------------|----------------|----------------|-----------------|
+|2     |Table |2021-02-07      |3073896         |4               |1                |
+|1     |Heater|2021-02-08      |9909            |1               |1                |

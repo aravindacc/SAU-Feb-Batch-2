@@ -1,0 +1,6 @@
+|c_code|c_name         |
+|------|---------------|
+|1     |Home Appliances|
+|2     |Office Goods   |
+|3     |Kitchen        |
+|4     |Sports         |

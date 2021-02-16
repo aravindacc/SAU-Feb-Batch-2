@@ -1,0 +1,54 @@
+.myCardClass {
+  padding-top: 2%;
+  float: left;
+  padding-right: 2%;
+  padding-bottom: 5%;
+  width: 40%;
+  height: 60%;
+  margin-top: 2%;
+  margin-left: 5%;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+  transform: translate3d(0px, -10px, -5px);
+}
+
+.rightContainer {
+  float: right;
+  padding-top: 2%;
+  margin-left: 1%;
+  margin-right: 5%;
+  padding-bottom: 2%;
+  width: 47%;
+  height: 60%;
+  margin-top: 2%;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+  transform: translate3d(0px, -10px, -5px);
+}
+
+.background {
+  background-color: rgb(230, 230, 230);
+}
+
+.show {
+  display: block;
+}
+
+.automate {
+  margin-left: 30%;
+}
+
+.terminalOutput {
+  padding-left: 10px;
+  color: white;
+}
+
+#myTerminal {
+  margin-top: 10px;
+  overflow-y: scroll;
+}
+
+.my_table {
+  max-height: 400px;
+  overflow-y: scroll;
+}
