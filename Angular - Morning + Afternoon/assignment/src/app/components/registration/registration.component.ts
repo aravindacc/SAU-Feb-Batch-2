@@ -86,7 +86,7 @@ export class RegistrationComponent implements OnInit {
   public arrow = "";
   
 
-  public sorttable(column:string) {
+ /* public sorttable(column:string) {
     
     if (this.flag == 1)
     {  this.users = this.users.sort((x:Student, y: Student) => {
@@ -120,7 +120,7 @@ export class RegistrationComponent implements OnInit {
     
     sessionStorage.setItem('Users', JSON.stringify(this.users));
     console.log(this.users);
-  }
+  }*/
 
 }
 

@@ -86,11 +86,12 @@
             </tr>
         </thead>
 
+        <!--<td class = "table-data">{{i.dob | date : 'longDate'}}</td>-->
         <tr *ngFor = "let i of users">
             <td class = "table-data">{{i.firstname}}</td>
             <td class = "table-data">{{i.lastname}}</td>
             <td class = "table-data">{{i.contact}}</td>
-            <td class = "table-data">{{i.dob | date : 'longDate'}}</td>
+            <td class = "table-data">{{i.dob | customdob: "months day, year" }}</td>
             <td class = "table-data">{{i.city}}</td>
             <td class = "table-data">{{i.zip}}</td>
             <td (click) = "delete(i.firstname)"> 
