@@ -1,0 +1,28 @@
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">S.No</th>
+            <th scope="col" (click)="sort('first_name')">First Name</th>
+            <th scope="col" (click)="sort('last_name')">Last Name</th>
+            <th scope="col" (click)="sort('contact_no')">Contact No</th>
+            <th scope="col" (click)="sort('dob')">Date Of Birth</th>
+            <th scope="col" (click)="sort('city')">City</th>
+            <th scope="col" (click)="sort('pincode')">Pincode</th>
+            <th scope="col">Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of getData();index as i">
+            <th scope="col">{{i+1}}</th>
+            <th>{{employee.first_name}}</th>
+            <th>{{employee.last_name}}</th>
+            <th>{{employee.contact_no}}</th>
+            <th>{{employee.dob | customeDOB}}</th>
+            <th>{{employee.city}}</th>
+            <th>{{employee.pincode}}</th>
+            <th (click)="delete(i)"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+              </svg></th>
+        </tr>
+    </tbody>
+</table>
