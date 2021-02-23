@@ -14,7 +14,7 @@ import java.util.*;
 
 class student_desearlized implements Serializable{
     
-	public int rollNumber;
+    public int rollNumber;
     public int student_marks;
     
     student_desearlized (int rollNumber,int student_marks){
@@ -24,9 +24,9 @@ class student_desearlized implements Serializable{
 }
 
 
-class student_details{
+class student_details {
 	
-	int marks;
+    int marks;
     int rollNumber;
     String subject;
     
@@ -71,16 +71,16 @@ public class student implements Serializable  {
             
             for (int i = 0; i < no_of_entries; i++) {
                 Node xmlnode = nodes.item(i);
-                Element eElement = (Element) xmlnode;
+                Element xmlElement = (Element) xmlnode;
                 
                 // Parsing the integer form of rollnumber and marks
-                int student_roll = Integer.parseInt(eElement.getElementsByTagName("roll").item(0).getTextContent());
-                int student_marks=Integer.parseInt(eElement.getElementsByTagName("marks").item(0).getTextContent());
-                String subject=(eElement.getElementsByTagName("subject").item(0).getTextContent());
+                int student_roll = Integer.parseInt(xmlElement.getElementsByTagName("roll").item(0).getTextContent());
+                int student_marks= Integer.parseInt(xmlElement.getElementsByTagName("marks").item(0).getTextContent());
+                String subject = xmlElement.getElementsByTagName("subject").item(0).getTextContent();
                 
                 // each student_arr entry will contain a student_details object, 
                 // constructor is used to initialize and return a student_details object
-                students_arr[i]=new student_details(student_roll,student_marks,subject);
+                students_arr[i] = new student_details(student_roll, student_marks, subject);
                 
                 
                 // First part of question 1. Deserializing the students.xml to java objects
@@ -95,7 +95,6 @@ public class student implements Serializable  {
             // Creating a hashmap for storing the student roll number as a key and total marks as it's value
             HashMap <Integer, Integer> students_hash = new HashMap<>();
             for (int i = 0; i < no_of_entries; i++) {
-            	
             	int key_roll = students_arr[i].rollNumber;
             	if (students_hash.containsKey(key_roll)) {
             		int total_so_far = students_hash.get(key_roll);
