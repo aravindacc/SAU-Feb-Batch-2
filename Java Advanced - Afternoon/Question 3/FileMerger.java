@@ -86,7 +86,7 @@ public class FileMerger {
             doc1.getDocumentElement().normalize();
             NodeList allCSRProducerNodes1 = doc1.getElementsByTagName("CSR_Producer");
             doc2.getDocumentElement().normalize();
-            NodeList allCSRProducerNodes2 = doc1.getElementsByTagName("CSR_Producer");
+            NodeList allCSRProducerNodes2 = doc2.getElementsByTagName("CSR_Producer");
 
             // Iterating over all csr's in xml 1
             for (int i = 0; i < allCSRProducerNodes1.getLength(); i++) {
