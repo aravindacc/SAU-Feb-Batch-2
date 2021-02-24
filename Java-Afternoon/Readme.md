@@ -9,22 +9,38 @@
 
 ## 1. Write Merged List to a File
 
-### **Solution** - `XMLParser.java`
+### **Solution:**
+
+```
+XMLParser.java
+```
 
 1. Parsing License1.xml and License2.xml and Created a Hashmap of <NIPR_Number, [CSR_Producer...]> so to find all CSR_Producer tags with same NIPR_Number.
 2. Now Created Another Hashmap<StateCode+licenseNumber+EffectiveDate`a unique key`, [License]> so to find all the Licenese under the same NIPR_Number with same StateCode, licenseNumber and EffectiveDate.
 3. Now wrote the merged results to `merged.xml` file.
 
-### **Output** - `Creates 1 XML File (merged.xml) - Merging the Nodes based on Keys specified above`
+### **Output:**
 
-### 2. Write Valid Licenses to a File (Valid.xml) and Invalid Licenses to a File (Invalid.xml) on `License_Expiration_Date`.
+```
+Creates 1 XML File (merged.xml) - Merging the Nodes based on Keys specified above
+```
 
-### **Solution** - `ValidLicense.java`
+### 2. Write Valid Licenses to a File (Valid.xml) and Invalid Licenses to a File (Invalid.xml) on **License_Expiration_Date**.
+
+### **Solution:**
+
+```
+ValidLicense.java
+```
 
 1. Parsing merged.xml and getting the Epiration Date from the License Node.
 2. Now compare this date to today's date and depending upon that comparison, moving the particular License Node (and it's child nodes) to corresponding file (valid.xml OR invalid.xml)
 
-### **Output** - `Created 2 XML File (valid.xml and invalid.xml) - Writing Valid Licenses to valid.xml and Invalid Licenses to invalid.xml based on License_Expiration_Date`
+### **Output:**
+
+```
+Created 2 XML File (valid.xml and invalid.xml) - Writing Valid Licenses to valid.xml and Invalid Licenses to invalid.xml based on License_Expiration_Date
+```
 
 
 ### Running and Installation
