@@ -1,0 +1,1 @@
+export { getBooksList } from './getBooksService';

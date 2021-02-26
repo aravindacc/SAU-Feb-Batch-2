@@ -1,0 +1,59 @@
+.content{
+    margin: 2em auto;
+    font-family: 'bree_serifregular';
+    
+  }
+  .half{
+    float: left;
+    margin: 1%;
+    padding: 0 2%;
+    border-radius: 3px;
+  }
+  #first-half{
+    width: 56%;
+  }
+  #first-half1{
+    width: 35%;
+  }
+  #second-half2{
+    border: 1px solid;
+    width: 60%;
+  }
+  #second-half{
+    border: 1px solid;
+    width: 28%;
+  }
+  .no-change{
+    background: #f0f0f0;
+    padding: .1em 1em;
+    border-radius: 3px;
+  }
+  .red{
+    color: #ff3e3e;
+    font-size: 1.1em;
+    text-align: center;
+  }
+  .book-cover{
+    text-align: center;
+  }
+  .book-cover img{
+    width: 60%;
+    margin: 1em;
+    border-radius: 3px;
+  }
+  li{
+    margin: .5em 0;
+  }
+  
+  h3{
+    text-align: center;
+    color: #154f83;
+    margin: 1em;
+    cursor: pointer;
+  }
+  #second-half ul{
+    list-style-type: none;
+    padding-left: 20px;
+    margin: .5em 0;
+  }
+  

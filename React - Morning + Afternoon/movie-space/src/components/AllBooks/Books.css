@@ -1,0 +1,83 @@
+#main{
+    padding: 25px;
+}
+
+.searchBar{
+    margin-top: 50px;
+    
+}
+
+.btn{
+    margin-top: 50px;
+    margin-left: 30px;
+    width: 100px;
+}
+
+.card {
+  position: relative;
+  max-width: 400px;
+  margin-right: auto;
+  
+  margin-left: auto;
+  background-color: #fff;
+  flex: 0 0 33.333333%;
+  padding: 1em;
+  color: #333;
+  box-shadow: 0.125em 0.55em 0.35em rgba(0, 0, 0, 0.2);
+}
+
+.book-info {
+  padding-top: 1em;
+  padding-right: 1em;
+  padding-left: 1em;
+  background: #fff;
+}
+
+.title {
+  margin-bottom: 0.125em;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.byline, .rating {
+  color: #666;
+  font-size: 0.825em;
+  line-height: 1.4;
+}
+
+.card .image.cover {
+  position: relative;
+  z-index: 1;
+  display: block;
+  height: 225px;
+  width: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 0.25em 0.55em 1.2em rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 600px) {
+  .image.cover {
+    display: inline-block;
+    margin-top: -2em;
+    margin-right: 0.825em;
+    vertical-align: top;
+  }
+}
+
+.likes {
+  margin-top: 1em;
+  padding: 0.625em 1em;
+  border-top: 0.0125em solid #ccc;
+}
+
+.card .likes .name {
+  font-weight: 700;
+}
+
+.flexing{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
