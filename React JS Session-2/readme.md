@@ -1,5 +1,5 @@
 # Kishan Mishra
-## Email : kishan.mishra@accolitedigita.com
+## Email : kishan.mishra@accolitedigital.com
 
 ## Assignment :
 Create an app that will show a list of books available in a store 
