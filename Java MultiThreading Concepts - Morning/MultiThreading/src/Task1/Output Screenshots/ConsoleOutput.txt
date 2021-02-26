@@ -1,0 +1,612 @@
+CONSOLE OUTPUT: 
+-----------------
+
+
+/usr/lib/jvm/java-1.11.0-openjdk-amd64/bin/java -javaagent:/home/abhi/Downloads/idea-IC-203.7148.57/lib/idea_rt.jar=43635:/home/abhi/Downloads/idea-IC-203.7148.57/bin -Dfile.encoding=UTF-8 -classpath /home/abhi/IdeaProjects/MultiThreading/out/production/MultiThreading Task1.Producer
+
+
+Thread-1 is going to Remove Employee if the Queue is not empty
+Waiting for Producer To Produce Data To The Queue
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+Removed Employee From The Queue
+After adding employee the new Queue size is: 1
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 1
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 2
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 3
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 4
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 5
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 6
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 7
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 8
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 9
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 10
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 11
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 12
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 13
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 14
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 15
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 16
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 17
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 18
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 19
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 20
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 21
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 22
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 23
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 24
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 25
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 26
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 27
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 28
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 29
+After removing employee the new Queue size is: 0
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 28
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 27
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 26
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 25
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 24
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 23
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 22
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 21
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 20
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 19
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 18
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 17
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 16
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 15
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 14
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 13
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 12
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 11
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 12
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 11
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 12
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 11
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 12
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 11
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 12
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 13
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 12
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 11
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 12
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 13
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 12
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 13
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 12
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 13
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 12
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 13
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 12
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 13
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 12
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 13
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 12
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 11
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 12
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 11
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 12
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 11
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 12
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 11
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 12
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 11
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 10
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 9
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 8
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 7
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 6
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 5
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 4
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 3
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 2
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 1
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 0
+Thread-1 is going to Remove Employee if the Queue is not empty
+Waiting for Producer To Produce Data To The Queue
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 1
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 2
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 3
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 4
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 5
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 6
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 7
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 8
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 9
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 10
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 11
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 12
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 13
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 14
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 15
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 16
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 17
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 18
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 19
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 20
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 21
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 22
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 23
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 24
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+Removed Employee From The Queue
+After removing employee the new Queue size is: 24
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 23
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 22
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 21
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 20
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 19
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 18
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 17
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 16
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 15
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 14
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 13
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 12
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 11
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 10
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 9
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 8
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 7
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 6
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 5
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 4
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 3
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 2
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 1
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 0
+Thread-1 is going to Remove Employee if the Queue is not empty
+Waiting for Producer To Produce Data To The Queue
+After adding employee the new Queue size is: 0
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 1
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 2
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 3
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 4
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 5
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 6
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 7
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 8
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 9
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 10
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 11
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 12
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 13
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 14
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 15
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 16
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 17
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 18
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 19
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 20
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 21
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 22
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 23
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 24
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 25
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 26
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 27
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 28
+Thread-0 is going to Add Employee if the Queue is not full
+Added Employee To The Queue
+After adding employee the new Queue size is: 29
+Removed Employee From The Queue
+After removing employee the new Queue size is: 28
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 27
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 26
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 25
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 24
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 23
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 22
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 21
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 20
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 19
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 18
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 17
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 16
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 15
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 14
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 13
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 12
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 11
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 10
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 9
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 8
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 7
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 6
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 5
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 4
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 3
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 2
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 1
+Thread-1 is going to Remove Employee if the Queue is not empty
+Removed Employee From The Queue
+After removing employee the new Queue size is: 0
+Thread-1 is going to Remove Employee if the Queue is not empty
+Waiting for Producer To Produce Data To The Queue
