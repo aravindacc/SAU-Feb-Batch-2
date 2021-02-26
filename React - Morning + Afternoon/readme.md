@@ -7,8 +7,10 @@
 - Add an automatic Search functionality, to search once user stops typing
 - Store Session Data in Redux Persist to avoid api hitting.
 
+
 ### Redux Persist Store ScreenShot :
 ![Redux Persist Store](https://github.com/abhinav629/SAU-Feb-Batch-2/blob/main/React%20-%20Morning%20%2B%20Afternoon/Redux%20Persist%20Store.png)
+
 
 
 ## Working Application: 
