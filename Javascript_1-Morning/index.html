@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <script type="text/javascript" src="./index.js"></script>
+    <style>
+      .button {
+        background-color: grey;
+        border: none;
+        color: white;
+        padding: 10px 24px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        border-radius: 6px;
+        transition-duration: 0.4s;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .button:hover {
+        background-color: black;
+        color: white;
+      }
+
+      input[type="text"] {
+        border: 2px solid black;
+        border-radius: 4px;
+        width: 15%;
+        height: 5%;
+      }
+
+      .body {
+        text-align: center;
+        padding-top: 7%;
+      }
+    </style>
+  </head>
+
+  <body class="body">
+    <input type="text" id="mytext" placeholder="Enter Input String" />
+    <br />
+    <br />
+    <button type="button" class="button" onclick="strlen()">
+      Calculate Length
+    </button>
+    <p id="len"></p>
+
+    <br />
+    <button type="button" class="button" onclick="toupplow()">
+      To Upper / Lower Case
+    </button>
+    <p id="tb2a"></p>
+    <p id="tb2b"></p>
+    <br />
+    <button type="button" class="button" onclick="countofvnc()">
+      No.Of Vowels & Consonants
+    </button>
+    <p id="tb3a"></p>
+    <p id="tb3b"></p>
+    <br />
+    <button type="button" class="button" onclick="checknum()">
+      Val Number
+    </button>
+    <p id="tb4"></p>
+    <br />
+  </body>
+</html>

@@ -1,0 +1,11 @@
+
+.main-image {
+    background: url(https://i.pinimg.com/originals/a8/a0/b4/a8a0b43ed6df7d2dece78d13103bc046.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+    background-attachment: fixed;
+  }

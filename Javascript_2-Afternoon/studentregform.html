@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <style>
+      .button {
+        background-color: grey;
+        border: none;
+        color: white;
+        padding: 10px 24px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        border-radius: 6px;
+        transition-duration: 0.4s;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .button:hover {
+        background-color: black;
+        color: white;
+      }
+
+      .age {
+        border: 2px solid black;
+        border-radius: 4px;
+        width: 15%;
+        height: 5%;
+      }
+
+      input[type="text"] {
+        border: 2px solid black;
+        border-radius: 4px;
+        width: 15%;
+        height: 5%;
+      }
+
+      .body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <fieldset>
+      <legend></legend>
+      <div class="container">
+        <div class="header">
+          <h1>REGISTRATION FORM</h1>
+        </div>
+        <label for="firstname"><b>FIRSTNAME : </b></label>
+        <input type="text" placeholder="Enter FirstName" id="firstname" />
+        <br /><br />
+        <label for="lastname"><b>LASTNAME : </b></label>
+        <input type="text" placeholder="Enter lastName" id="lastname" />
+        <br /><br />
+        <label for="dob"><b>DATE OF BIRTH : </b></label>
+        <input type="text" placeholder="Enter dateofbirth" id="dob" />
+        <br /><br />
+        <label for="gender"><b>GENDER : </b></label>
+        <input type="text" placeholder="Enter gender" id="gender" />
+        <br /><br />
+        <label for="age"><b>AGE : </b></label>
+        <input class="age" type="number" placeholder="Enter age" id="age" />
+        <br /><br />
+        <label for="rollno"><b>ROLLNO : </b></label>
+        <input type="text" placeholder="Enter RollNo" id="rollno" />
+        <br /><br />
+        <button class="button" onclick="submit()">SUBMIT</button>
+        <p id="psb"></p>
+        <br /><br />
+        <h3>Enter RollNo to fetch the student details</h3>
+
+        <input
+          type="text"
+          placeholder="Enter RollNo to fetch the details"
+          id="sroll"
+        />
+        <button class="button" type="button" onclick="Fetch_Details()">
+          Fetch-Details
+        </button>
+        <p id="sdetails"></p>
+      </div>
+      <script src="studentregform.js"></script>
+    </fieldset>
+  </body>
+</html>

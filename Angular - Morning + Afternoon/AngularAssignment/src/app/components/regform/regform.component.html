@@ -1,0 +1,152 @@
+<html>
+  <head>
+    <style>
+      .button {
+        background-color: grey;
+        border: none;
+        color: white;
+        padding: 10px 24px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        border-radius: 6px;
+        transition-duration: 0.4s;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      .dob {
+        border: 2px solid black;
+        border-radius: 4px;
+        width: 15%;
+        height: 5%;
+      }
+      .button:hover {
+        background-color: black;
+        color: white;
+      }
+
+       input[type="text"] {
+        border: 2px solid black;
+        border-radius: 4px;
+        width: 15%;
+        height: 5%;
+      } 
+
+      .body {
+        text-align: center;
+      }
+    </style>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body class="body">
+    <form name ="employeeForm" [formGroup]="employeeForm"> 
+    <fieldset>
+      <legend></legend>
+      <div class="container">
+        <div class="header">
+          <h1>REGISTRATION FORM</h1>
+        </div>  
+        <div class="form-group">
+          <label><b>FIRSTNAME : </b></label>
+          <input type="text" [class.is-invalid]="firstname.invalid && firstname.touched"  placeholder="Enter FirstName" formControlName="firstname" class="form-control">
+         <div *ngIf="firstname.invalid && firstname.touched">
+            <small class="text-danger" *ngIf="firstname.errors?.required">First Name is required</small>
+            <small class="text-danger" *ngIf="firstname.errors?.minlength">First Name must be at least 3 characters</small>         
+         </div>
+      </div>
+      <br>
+      <div class="form-group">
+        <label><b>LASTNAME : </b></label>
+        <input type="text" [class.is-invalid]="lastname.invalid && lastname.touched" placeholder="Enter lastName" formControlName="lastname" class="form-control">
+       <div *ngIf="lastname.invalid && lastname.touched">
+          <small class="text-danger" *ngIf="lastname.errors?.required">Lastname is required</small>
+          <small class="text-danger" *ngIf="lastname.errors?.minlength">Lastname must be at least 3 characters</small>         
+       </div>
+    </div>
+    <br>
+     <div class="form-group">
+        <label><b>CONTACT NUMBER : </b></label>
+        <input type="text" [class.is-invalid]="cno.invalid && cno.touched"  placeholder="Enter contact number" pattern = "^\d{10}$" formControlName="cno" class="form-control">
+       <div *ngIf="cno.errors && (cno.touched)">
+          <small class="text-danger" *ngIf="cno.errors?.required">Phone number is required</small>
+          <small class ="text-danger" *ngIf = "cno.errors?.pattern">Phone number must be 10 digits</small>
+       </div>
+    </div>    
+    <br>
+    <div class="form-group">
+        <label><b>DATE OF BIRTH : </b></label>
+        <input class="dob" type="date" [class.is-invalid]="dob.invalid && cno.touched" formControlName="dob" >
+       <div *ngIf="dob.invalid && dob.touched">
+          <small class="text-danger" *ngIf="dob.errors?.required">Date of is required</small>
+       </div>
+    </div>
+    <br>
+    <div class="form-group">
+        <label><b>City : </b> </label>
+        <input type="text" [class.is-invalid]="city.invalid && city.touched"  placeholder="Enter city"  formControlName="city" class="form-control">
+       <div *ngIf="city.invalid && city.touched">
+          <small class="text-danger" *ngIf="city.errors?.required">City of is required</small>
+       </div>
+    </div>
+    <br>
+    <div class="form-group">
+        <label><b>PINCODE : </b></label>
+        <input type="text" [class.is-invalid]="pincode.invalid && pincode.touched" placeholder="Enter pincode" required pattern = "^\d{6}$" formControlName="pincode" class="form-control">
+       <div *ngIf="pincode.errors && (pincode.touched)">
+          <small class="text-danger" *ngIf="pincode.errors?.required">Pincode is required</small>
+          <small class ="text-danger" *ngIf = "pincode.errors?.pattern">Pincode must be of 6 digits</small>
+       </div>
+    </div> 
+    <br>
+        <button class="button" type="button" (click)="onSubmit()">SUBMIT</button>
+        <p id="psb"></p>
+        <br /><br />
+        
+      </div>
+      <script src=""></script>
+    </fieldset>
+    </form>
+    <br/>
+    <div>
+    
+    <mat-table [dataSource]="dataSource" matSort>
+      <ng-container matColumnDef="firstname">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> <b>FIRSTNAME</b> </mat-header-cell>
+        <mat-cell *matCellDef="let user">{{user.firstname}}</mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="lastname">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> <b>LASTNAME</b> </mat-header-cell>
+        <mat-cell *matCellDef="let user">{{user.lastname}}</mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="cno">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> <b>CONTACTNO</b> </mat-header-cell>
+        <mat-cell *matCellDef="let user">{{user.cno}}</mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="dob">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> <b>DOB</b> </mat-header-cell>
+        <mat-cell *matCellDef="let user">{{user.dob | date:'longDate'}}</mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="city" >
+        <mat-header-cell *matHeaderCellDef mat-sort-header> <b>CITY</b> </mat-header-cell>
+        <mat-cell *matCellDef="let user">{{user.city}}</mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="pincode">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> <b>PINCODE</b> </mat-header-cell>
+        <mat-cell *matCellDef="let user">{{user.pincode}}</mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="actions">
+        <mat-header-cell *matHeaderCellDef>  </mat-header-cell>
+        <mat-cell (click)="deleteRecord(user.cno)" *matCellDef="let user">
+          <button mat-icon-button>
+            <mat-icon>delete</mat-icon>
+          </button>
+        </mat-cell>
+      </ng-container>
+      <mat-header-row *matHeaderRowDef="displayedColumns" color="primary"></mat-header-row>
+      <mat-row *matRowDef="let row; columns:displayedColumns"></mat-row>
+    </mat-table>
+    
+    </div>
+  </body>
+</html>
