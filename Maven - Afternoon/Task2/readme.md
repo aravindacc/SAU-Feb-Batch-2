@@ -1,4 +1,4 @@
-# Task 2 
+# Task 2
 ##  Using Maven Archetype Web APP Plugin generate a webapp project
 <br>
 <br>
