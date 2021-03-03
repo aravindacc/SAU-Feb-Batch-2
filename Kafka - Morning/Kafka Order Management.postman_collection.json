@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "b63747e8-60b9-4a04-9e3a-34221655f8b8",
+		"name": "Kafka Order Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\":\"Household\",\n    \"quantity\":10,\n    \"creationData\":\"02/03/2021\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{default_url}}/create-order",
+					"host": [
+						"{{default_url}}"
+					],
+					"path": [
+						"create-order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ship Order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{default_url}}/ship-order/1",
+					"host": [
+						"{{default_url}}"
+					],
+					"path": [
+						"ship-order",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "default_url",
+			"value": "http://127.0.0.1:8000"
+		}
+	]
+}

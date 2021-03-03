@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "122d9183-ab34-4705-bdad-8f68d0b3f7c4",
+		"name": "Order Management System",
+		"description": "Api's For Order Management System built in - Spring",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Order Items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{defaultUrl}}/orderItems/1",
+					"host": [
+						"{{defaultUrl}}"
+					],
+					"path": [
+						"orderItems",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{defaultUrl}}/allOrders",
+					"host": [
+						"{{defaultUrl}}"
+					],
+					"path": [
+						"allOrders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customerName\": \"Abhinav Sharma\",\n    \"customerPhone\": 7909948987,\n    \"deliveryAddress\": \"14 - Kaveri Green, Kailash Vihar, Agra\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{defaultUrl}}/createOrder",
+					"host": [
+						"{{defaultUrl}}"
+					],
+					"path": [
+						"createOrder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Item To Order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"units\": 100,\n    \"item\":{\n        \"cost\": 100,\n        \"name\": \"Soap\",\n        \"category\": \"Utils\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{defaultUrl}}/addItem/1",
+					"host": [
+						"{{defaultUrl}}"
+					],
+					"path": [
+						"addItem",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Item From Order",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{defaultUrl}}/deleteItem/1/1",
+					"host": [
+						"{{defaultUrl}}"
+					],
+					"path": [
+						"deleteItem",
+						"1",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Order",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{defaultUrl}}/deleteOrder/3",
+					"host": [
+						"{{defaultUrl}}"
+					],
+					"path": [
+						"deleteOrder",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Item In Order",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"units\": 100,\n    \"item\":{\n        \"cost\": 100,\n        \"name\": \"Gloved\",\n        \"category\": \"Gym\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{defaultUrl}}/updateItem/1/1",
+					"host": [
+						"{{defaultUrl}}"
+					],
+					"path": [
+						"updateItem",
+						"1",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "defaultUrl",
+			"value": "http://localhost:8000/orders"
+		}
+	]
+}
