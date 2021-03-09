@@ -1,0 +1,6 @@
+projectKey=CodeQuality
+serverUrl=http://localhost:8090
+serverVersion=8.7.0.41495
+dashboardUrl=http://localhost:8090/dashboard?id=CodeQuality
+flsfTkId=MlgLkvbBeiori2n89gsz
+ceTaskUrl=http://localhost:8090/api/ce/task?id=MlgLkvbBeiori2n89gsz
