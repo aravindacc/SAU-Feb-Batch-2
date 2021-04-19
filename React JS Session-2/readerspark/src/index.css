@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0C090A;
+  color:white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.movie{
+  width: 300px;
+}
+
+.bookinfo{
+  max-width: 100%;
+  text-align: center;
+  font-weight: bold;
+  align-self: center;
+}
+
+
+.bookcard {
+  width: 250px;
+  margin: 1rem;
+  height: 400;
+  background-color: #3D3C3A;
+}
+
+.card{
+  height:250;
+  width: 250;
+}
+
+
+.searchbox{
+  display: inline-flex;
+  margin-left: 550px;
+  background-color: transparent;
+  border:2px solid #22254b;
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0.5rem 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+}
+
+
+.searchresultpage {
+  align-self: center;
+  align-content: center;
+  margin: auto;
+}
+
+.apppage{
+  padding : 30;
+  margin-top: 100px;
+  display: inline-flex;
+  margin-left: 450px;
+  border:2px solid #22254b;
+  font-size: 40px;
+  border-radius: 50px;
+  text-align: center;
+  padding: 0.5rem 1.5rem;
+  background-color: #000000;
+}
+
+.fronttext {
+  font-size: 80px;
+  font-weight: 'bold';
+  text-align: center;
+  margin-top: 100px;
+}
+
+
+.detailspage {
+  align-items: center;
+  margin-left: 400px;
+  text-align: center;
+}
+
+.imgDetail{
+  margin-top: 40px;
+  margin-left: 580px;
+  margin-bottom: 50px;
+}
+
+
+.contentDetail{
+  text-align: center;
+}
+
+.buybutton{
+  margin-top: 30px;
+  margin-left: 580px;
+  text-align: "center";
+  color: red;
+  font-weight: 700;
+  display: inline-flex;
+  border-radius: 50px;
+  border:2px solid black;
+  padding: 0.5rem 1.5rem;
+  background-color: burlywood;
+  
+}

@@ -1,0 +1,1 @@
+###  I have made the tables based on the ER diagram. ER diagram can be found here : https://github.com/KishanMishra-SAU/SAU-Feb-Batch-2/blob/main/RDBMS_session%20-%20Morning/KishanMishra_RDBMS_assignment.pdf
