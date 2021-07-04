@@ -1,0 +1,20 @@
+body {
+    background-image: url('./img/background.jpg');
+    font-size: larger;
+}
+
+input, button, label {
+    margin-top: 10px;
+}
+
+#container {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+}
+
+#row {
+    border: 2px solid black;
+    box-shadow: 5px 10px;
+    padding: 20px;
+}

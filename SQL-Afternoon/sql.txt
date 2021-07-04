@@ -1,0 +1,110 @@
+CREATE TABLE Customer (
+	id integer primary key,
+  customer_name varchar(50),
+  mob_no integer,
+  dob date,
+  gender varchar(10),
+  customer_location_id integer,
+  FOREIGN KEY (customer_location_id) REFERENCES Location(code)
+);
+
+CREATE TABLE Product (
+	code integer primary key,
+  product_name varchar(50),
+ 	unit_price DECIMAL(10, 4)
+);
+
+CREATE TABLE SalesExecutive
+(
+	id integer primary key,
+	sales_executive_name varchar(50),
+	dob date,
+	mob_no integer
+);
+
+CREATE TABLE Location
+(
+  code integer primary key,
+  location_name varchar(50)
+);
+
+CREATE TABLE ProductCategory
+(
+  code integer primary key,
+  category_name varchar(50)
+);
+
+CREATE TABLE SaleInfo
+(
+  id integer primary key,
+  cust_id integer,
+  sales_executive_id integer,
+  product_id integer,
+  date_of_purchase date,
+  units int,
+  FOREIGN KEY (cust_id) REFERENCES Customer(id),
+  FOREIGN KEY (sales_executive_id) REFERENCES SalesExecutive(id),
+  FOREIGN KEY (product_id) REFERENCES Product(code)
+);
+
+INSERT INTO Customer Values (1, "Kunal", 123456789, '1998-05-07', 'M', 1);
+INSERT INTO Customer Values (2, "Aditya", 123456852, '1998-08-06', 'M', 2);
+INSERT INTO Customer Values (3, "Diksha", 1234564562, '1999-12-02', 'F', 3);
+INSERT INTO Customer Values (4, "Nisha", 1234258960, '1998-05-12', 'F', 1);
+INSERT INTO Customer Values (5, "Atharva", 1234658960, '1998-12-11', 'M', 2);
+
+
+INSERT INTO Product VALUES (1, "One Plus TV", 13999, 1)
+INSERT INTO Product VALUES (2, "IPHONE X", 53999, 2)
+INSERT INTO Product VALUES (3, "Realme X3", 28999, 2)
+INSERT INTO Product VALUES (4, "MI TV 4A (43 inch)", 22499, 1)
+INSERT INTO Product VALUES (5, "Sofa", 5000, 3)
+INSERT INTO Product VALUES (6, "Bed", 10000, 3)
+
+INSERT INTO SalesExecutive VALUES (1, "Kunal", '1998-05-07', 123456789);
+INSERT INTO SalesExecutive VALUES (2, "Aditya", '1998-08-06', 123456852);
+INSERT INTO SalesExecutive VALUES (3, "Diksha", '1999-12-02', 1234564562);
+INSERT INTO SalesExecutive VALUES (4, "Nisha", '1998-05-12', 1234258960);
+INSERT INTO SalesExecutive VALUES (5, "Atharva", '1998-12-11', 1234658960);
+
+INSERT INTO Location VALUES (1, "Delhi");
+INSERT INTO Location VALUES (2, "Mumbai");
+INSERT INTO Location VALUES (3, "Bangalore");
+
+INSERT INTO ProductCategory VALUES (1, "LED TV");
+INSERT INTO ProductCategory VALUES (2, "Smart Phone");
+INSERT INTO ProductCategory VALUES (3, "Furniture");
+
+INSERT INTO SaleInfo VALUES (1, 1, 5, 1, '2021-02-01', 5)
+INSERT INTO SaleInfo VALUES (2, 2, 3, 3, '2021-02-02', 10)
+INSERT INTO SaleInfo VALUES (3, 2, 1, 1, '2021-02-02', 5)
+INSERT INTO SaleInfo VALUES (4, 3, 5, 5, '2021-02-04', 10)
+INSERT INTO SaleInfo VALUES (5, 4, 5, 6, '2021-02-02', 2)
+INSERT INTO SaleInfo VALUES (6, 5, 1, 2, '2021-02-03', 20)
+INSERT INTO SaleInfo VALUES (7, 5, 1, 5, '2021-02-04', 6)
+
+SELECT * FROM Customer
+SELECT * FROM Product
+SELECT * FROM SalesExecutive
+SELECT * FROM Location
+SELECT * FROM ProductCategory
+
+ALTER TABLE SalesExecutive
+ADD FOREIGN KEY (product_code) REFERENCES Product(code)
+
+QUERY 1
+
+select code, product_name, date_of_purchase, COUNT(*)
+FROM SaleInfo si
+JOIN Customer c ON si.cust_id = c.id
+JOIN product p on p.code = si.product_id
+where customer_location_id = 1 and si.date_of_purchase between '2021-02-02' and '2021-02-08'
+GROUP BY code
+
+QUERY 2
+
+select SalesExecutive.sales_executive_name, SaleInfo.sales_executive_id, SUM(units)
+FROM SaleInfo
+INNER JOIN SalesExecutive ON SaleInfo.sales_executive_id = SalesExecutive.id
+GROUP BY SaleInfo.sales_executive_id
+ORDER BY units
